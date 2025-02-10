@@ -17,7 +17,6 @@ import { Input } from './ui/input';
 
 type CustomFormFieldProps = {
   name: string;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   control: Control<any>;
   placeholder?: string;
 };
@@ -52,7 +51,6 @@ export function CustomFormField({
 
 type CustomFormSelectProps = {
   name: string;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   control: Control<any>;
   items: string[];
   labelText?: string;
@@ -107,31 +105,26 @@ export default function AddJobForm() {
       <form className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <CustomFormField
           name="Position"
-          // eslint-disable-next-line @typescript-eslint/no-explicit-any
           control={{} as Control<any>} // Replace with actual `control`
           placeholder="Enter position"
         />
         <CustomFormField
           name="Company"
-          // eslint-disable-next-line @typescript-eslint/no-explicit-any
           control={{} as Control<any>} // Replace with actual `control`
           placeholder="Enter company"
         />
         <CustomFormField
           name="Location"
-          // eslint-disable-next-line @typescript-eslint/no-explicit-any
           control={{} as Control<any>} // Replace with actual `control`
           placeholder="Enter location"
         />
         <CustomFormSelect
           name="Job Status"
-          // eslint-disable-next-line @typescript-eslint/no-explicit-any
           control={{} as Control<any>} // Replace with actual `control`
           items={['pending', 'approved', 'rejected']}
         />
         <CustomFormSelect
           name="Job Mode"
-          // eslint-disable-next-line @typescript-eslint/no-explicit-any
           control={{} as Control<any>} // Replace with actual `control`
           items={['full-time', 'part-time', 'contract']}
         />
