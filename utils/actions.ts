@@ -30,8 +30,8 @@ export async function createJobAction(
       },
     });
     return job;
-  } catch (error) {
-    console.error(error);
+  } catch (error:any) {
+    console.error(error.message);
     return null;
   }
 }
