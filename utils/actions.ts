@@ -12,7 +12,7 @@ async function authenticateAndRedirect(): Promise<string> {
   console.log("userId", userId);
 
   if (!userId) {
-    redirect("/"); // Redirect if userId is not found
+    redirect("/"); //  Redirect if userId is not found
   }
   return userId;
 }
