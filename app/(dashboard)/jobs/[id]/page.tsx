@@ -1,3 +1,4 @@
+
 import EditJobForm from '@/components/EditJobForm';
 import { getSingleJobAction } from '@/utils/actions';
 
@@ -7,7 +8,10 @@ import {
   QueryClient,
 } from '@tanstack/react-query';
 
-async function JobDetailPage({ params }: { params: { id: string } }) {
+
+export default async function JobDetailPage({ params }:{
+  params: any
+}) {
   const queryClient = new QueryClient();
 
   await queryClient.prefetchQuery({
@@ -21,4 +25,4 @@ async function JobDetailPage({ params }: { params: { id: string } }) {
     </HydrationBoundary>
   );
 }
-export default JobDetailPage;              
+
